@@ -1,26 +1,8 @@
-# Leaky Repo 🚿
 
-## Table of contents
-* [FAQ](#FAQ)
-* [Secrets](#Secrets)
-* [Results](#Results)
-* [Changelog](#Changelog)
-* [Contact](#Contact)
+This is a repo full of secrets. This was made for testing SAST secret scanning tools. 
 
-# FAQ
-## What is this?
-This is a repo full of mistakes. I will include several of the secrets I've seen commonly leaking from real projects. It will be useful for testing scanning tools such as [github-dorks](https://github.com/techgaun/github-dorks) and [truffleHog](https://github.com/dxa4481/truffleHog).
 
-## Where did you get these?
-It's worth noting that none of the secrets here are real. They are all things I've seen before, but I've randomized or redacted all of the actual data. The vast majority of secrets will likely be taken from patterns created for github-dorks, which are primarily taken from config files for popular services. I've also worked on several scanning tools in the past. Most notably, github-dorks, [PasteHunter](https://github.com/kevthehermit/PasteHunter), [github-dorks](https://github.com/techgaun/github-dorks), as well as [GHScraper](https://github.com/Plazmaz/GHScraper), and several other non-public or unreleased scanners. Essentially, I've seen a **lot** of whoopsies on git, which will also be included.
-
-## Why did you make this repo?
-This repo was made to serve as a benchmark for secrets scanners. Repo scanning tools have varying levels of coverage, and so far the go-to option has been "slam a bunch together". This repo is also partially to test my theory that this technique still isn't really sufficient. Regardless, you can't _just_ scan for high entropy, and you can't _just_ scan for patterns, you need to do both!
-
-## How can I avoid uploading these secrets?
-I've written a blog post on [Why We Fail at Keeping Git Secrets](https://dylankatz.com/Why-We-Fail-At-Keeping-Git-Secrets/?utm_source=leaky_repo). If you truly want to keep your secrets safe, seperate them from your repo. If that's a config file, that's fine. If it's a secrets management/storage system, that's even better. As long as you can stop git from adding that information by default, you're unlikely to hit any problems.
-
-# Secrets
+# Secret Keys
 Filename                                           | Description
 ------------------------------------------------|--------------------------------------------------------------------------
 .npmrc                                          | NPM registry authentication data
@@ -68,18 +50,3 @@ sftp-config.json                       | Created by SFTP for Sublime Text, conta
 .idea/WebServers.xml                         | Created by Jetbrains IDEs, contains webserver credentials with encoded passwords ([not encrypted!](https://intellij-support.jetbrains.com/hc/en-us/community/posts/207074025/comments/207034775))
 high-entropy-misc.txt                          | Misc high entropy strings (HES1 is plain, HES2 is base64)
 
-# Results
-We've tested a few tools and generated metrics for it. You can see how the tools tested so far stack up in [Benchmarking](https://github.com/Plazmaz/leaky-repo/tree/master/.leaky-meta/benchmarking)  
-If there's a tool you'd like tested, please file an issue with details on it or create a PR. We are focused primarily on command-line based tools, but are also happy to accept results from web or GUI-based tools, as long as you include the full results and details about the tool.
-
-# Changelog
-You can see recent changes made in our [CHANGELOG.md file](https://github.com/Plazmaz/leaky-repo/blob/master/.leaky-meta/CHANGELOG.md) or under [Releases](https://github.com/Plazmaz/leaky-repo/releases). We use semantic versioning for releases.
-
-# Contact
-Got a question? Found something worth adding?   
-[File an issue](https://github.com/Plazmaz/leaky-repo/issues)  
-Have another reason to contact me? You can find me on Twitter:  
-[@Plazmaz](https://twitter.com/Plazmaz)
-
-
-It's also worth noting that many of the original patterns used to find the filenames and examples of several secrets came from github-dorks, which is under tha [Apache 2.0 License](https://github.com/techgaun/github-dorks/blob/master/LICENSE). Also, for the sake of full disclosure, I am a maintainer on that project.
