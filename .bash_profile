@@ -8,8 +8,8 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-export AWS_ACCESS_KEY_ID=yLryKGwcGc3ez9G8YAnjeYMQOc # Informative, can't be used w/o the secret key
-export AWS_SECRET_ACCESS_KEY=nAH2VzKrMrRjySLlt8HCdFU3tM2TUuUZgh39NX
+export AWS_ACCESS_KEY_ID=AKIAJSIE27KKMHXI3BJQ # Informative, can't be used w/o the secret key
+export AWS_SECRET_ACCESS_KEY=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
 export AWS_DEFAULT_REGION='us-west-1' # Broad enough that it doesn't create risk by itself.
 export AWS_REGION=$AWS_DEFAULT_REGION
 export S3_REGION=$AWS_DEFAULT_REGION
