@@ -16,6 +16,9 @@ cloud/.credentials                              | S3 Credentials file
 cloud/.s3cfg                                    | S3 Credentials file
 cloud/.tugboat                                  | Digital Ocean tugboat config
 cloud/heroku.json                               | Heroku config
+web/js/api_generic.js                           | Simple API token on js file
+web/js/basic.js                                 | Simple API call authorization type basic
+web/js/bearer.js                                | Simple API call authorization type bearer
 web/var/www/public_html/wp-config.php           | WordPress config file
 web/var/www/public_html/.htpasswd               | htpasswd file
 web/var/www/public_html/config.php              | PHP application config file
@@ -23,6 +26,7 @@ web/var/www/.env                                | Laravel .env (CI, various ruby
 .git-credentials                                | Git credentials store
 .bashrc                                         | .bashrc file (contains several secrets as environment variables)
 .bash_profile                                   | .bash_profile file (contains several secrets as environment variables)
+.bash_history                                   | .bash_history file (contains secrets on bash commands)
 db/robomongo.json                               | Mongolab credentials for robomongo
 db/mongoid.yml                                  | Mongoid config file
 web/js/salesforce.js                            | Salesforce credentials in a nodejs project
