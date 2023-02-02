@@ -1,0 +1,14 @@
+### POST LOGIN ERROR
+POST http://localhost:8081/login/ HTTP/1.1
+
+Content-Type: application/json
+
+{
+
+    "username": "willy@test.com",
+
+    "password": "Passsssword"
+
+}
+
+
