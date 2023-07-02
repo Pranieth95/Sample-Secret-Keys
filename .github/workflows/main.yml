@@ -1,0 +1,23 @@
+name: Secret Scanning using Trufflehog3
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  trufflehog_scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x' # Adjust the Python version if needed
+
+      - name: Install trufflehog3
+        run: pip install trufflehog3
+
+      - name: Run Trufflehog3 Scan
+        run: trufflehog3 .
