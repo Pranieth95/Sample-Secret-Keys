@@ -1,0 +1,36 @@
+Secret Scanning
+report activity / usage
+1. Trufflehog3 
+    - basic command 
+        - scaning file
+            - repository
+    - setup exclude
+        - filter 1 directory
+            - filter 1 file
+    - setup false-positive
+        - setup : nosecret
+            - ignore
+    - create all this rule at 1 file config {nama}-trufflehog3.yml
+    - advance command
+        - only show current changes (only scan commit/mr)    
+            - show 3 history commits
+
+2. gitleaks
+    - basic coommand 
+        - scaning file
+            - repository
+    - set-up for automate
+            - commit activity (pre-commit)
+
+3. output 1 doc pdf 
+    - screenshot command & ouput command
+    - screenshot file config ({nama}-trufflehog3.yml, pre-commit)
+
+// ===================================================================================================
+
+TEST:
+trufflehog3 . --branch "$(git branch --show-current)"
+trufflehog3 git . -c joko-trufflehog3.yml -s MEDIUM
+
+COMBINE:
+trufflehog3 . --branch "$(git branch --show-current)" -c joko-trufflehog3.yml -s MEDIUM

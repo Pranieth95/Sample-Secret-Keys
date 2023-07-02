@@ -1,0 +1,10 @@
+exclude: # exclude matching issues
+    - message: Exclude ruby file secret
+      paths:
+          - web/ruby/secrets.yml
+    - message: Exclude all secrets inside misc-keys
+      paths:
+          - misc-keys/**
+
+severity: high # minimum severity filter, DOESNT WORK :(
+no_history: true
