@@ -46,8 +46,9 @@ deployment-config.json                          | Created by sftp-deployment for
 .ftpconfig                                      | Created by remote-ssh for Atom, contains SFTP/SSH server details and credentials
 .remote-sync.json                               | Created by remote-sync for Atom, contains FTP and/or SCP/SFTP/SSH server details and credentials
 .vscode/sftp.json                               | Created by vscode-sftp for VSCode, contains SFTP/SSH server details and credentials
-sftp-config.json                       | Created by SFTP for Sublime Text, contains FTP/FTPS or SFTP/SSH server details and credentials
-.idea/WebServers.xml                         | Created by Jetbrains IDEs, contains webserver credentials with encoded passwords ([not encrypted!](https://intellij-support.jetbrains.com/hc/en-us/community/posts/207074025/comments/207034775))
-high-entropy-misc.txt                          | Misc high entropy strings (HES1 is plain, HES2 is base64)
-PII/Credit cards.txt                           | Visa/ MAsterCard/ American express/ Australian bank card/ Dinners Club data
+sftp-config.json                                | Created by SFTP for Sublime Text, contains FTP/FTPS or SFTP/SSH server details and credentials
+.idea/WebServers.xml                            | Created by Jetbrains IDEs, contains webserver credentials with encoded passwords ([not encrypted!](https://intellij-support.jetbrains.com/hc/en-us/community/posts/207074025/comments/207034775))
+high-entropy-misc.txt                           | Misc high entropy strings (HES1 is plain, HES2 is base64)
+PII/Credit cards.txt                            | Visa/ MAsterCard/ American express/ Australian bank card/ Dinners Club data
+Vendors.txt                                     | .env, YAML, Docker env, JavaScript (Winston logger), .tf provider block, Ruby (Capistrano)
 
