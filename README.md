@@ -50,5 +50,5 @@ sftp-config.json                                | Created by SFTP for Sublime Te
 .idea/WebServers.xml                            | Created by Jetbrains IDEs, contains webserver credentials with encoded passwords ([not encrypted!](https://intellij-support.jetbrains.com/hc/en-us/community/posts/207074025/comments/207034775))
 high-entropy-misc.txt                           | Misc high entropy strings (HES1 is plain, HES2 is base64)
 PII/Credit cards.txt                            | Visa/ MAsterCard/ American express/ Australian bank card/ Dinners Club data
-Vendors.txt                                     | .env, YAML, Docker env, JavaScript (Winston logger), .tf provider block, Ruby (Capistrano)
+DataDog-keys.txt                                | .env, YAML, Docker env, JavaScript (Winston logger), .tf provider block, Ruby (Capistrano)
 
