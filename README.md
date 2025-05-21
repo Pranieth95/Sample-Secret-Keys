@@ -51,4 +51,5 @@ sftp-config.json                                | Created by SFTP for Sublime Te
 high-entropy-misc.txt                           | Misc high entropy strings (HES1 is plain, HES2 is base64)
 PII/Credit cards.txt                            | Visa/ MAsterCard/ American express/ Australian bank card/ Dinners Club data
 DataDog-keys.txt                                | .env, YAML, Docker env, JavaScript (Winston logger), .tf provider block, Ruby (Capistrano)
+JWT                                             | Atlassian JSON Web Token
 
